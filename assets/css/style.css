@@ -52,7 +52,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #106eea;
+  border: 6px solid #106eea; 
   border-top-color: #e2eefd;
   border-radius: 50%;
   width: 60px;
@@ -711,7 +711,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #106eea;
+  background: #cbe0fb;
   top: 0;
   border-radius: 0px;
 }
@@ -933,7 +933,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #3b8af2;
+  color: #106eea;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
