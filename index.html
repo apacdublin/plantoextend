@@ -53,6 +53,36 @@
 
   <!-- Add to your <head> or existing stylesheet -->
   <style>
+    .email-float {
+      position: fixed;
+      bottom: 30px;
+      right: 110px; /* Positioned left of WhatsApp button */
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #EA4335 0%, #C5221F 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(234, 67, 53, 0.5);
+      z-index: 1000;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+  
+    .email-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(234, 67, 53, 0.7);
+    }
+  
+    .email-float svg {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+  </style>
+  
+  <style>
     .whatsapp-float {
       position: fixed;
       bottom: 30px;
@@ -1137,7 +1167,17 @@ If the local authority refuses your application, it will give you the reasons fo
     </svg>
   </a>
 
+  <!-- Email Float Button -->
+  <a href="mailto:info@plantoextend.ie?subject=Contact%20from%20Website&body=Hi,%20I%20would%20like%20to%20get%20in%20touch." 
+     class="email-float" 
+     aria-label="Send us an email">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+  </a>
+
 </html>
+
 
 
 
